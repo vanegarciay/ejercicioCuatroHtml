@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reproductor de audio</title>
+</head>
+<style type="text/css">
+    table {
+        width: 80%;
+        margin: 0 auto;
+    }
+    td {
+        text-align: center;
+    }
+    audio {
+        width: 100%;
+    }
+    button {
+        width: 13%;
+        height: 50px;
+        padding: 0px;
+        margin: 0px;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td>
+                <audio id="reproductor" src="https://freemusicarchive.org/music/download/cc84301a2828e93829baa2ea9516c08d7c55326b" controls>
+                    <p>Tu navegador no implementa el elemento audio.</p>
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="play()">Reproducir</button>
+                <button onclick="pause()">Pausar</button>
+                <button onclick="stop()">Detener</button>
+                <button onclick="avanzar()">Avanzar</button>
+                <button onclick="retroceder()">Retroceder</button>
+                <button onclick="disminuirVolumen()">Disminuir el Volumen</button>
+                <button onclick="aumentarVolumen()">Aumentar el Volumen</button>
+                
+            </td>
+        </tr>
+    </table>
+    <script src="assets/js/javascript.js"></script>    
+</body>
+</html>
